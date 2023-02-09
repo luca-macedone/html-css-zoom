@@ -19,6 +19,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--z-dark);
 }
 
 /* #endregion common */
@@ -69,21 +70,19 @@ body {
 
 /* #region utility */
 .container {
-    height: 100vh; /*! debug*/
-    width: 100%;
-    margin: auto;
+    height: 90vh;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
 
-    padding: 4rem 4rem 1rem;
+    padding: 4rem 3.2rem 0;
 
-    overflow-y: scroll ;
-
-    background-color: var(--z-dark);
+    overflow-y: scroll;
 }
 
 .card {
     width: calc(100% / 7);
+    
     padding: .25rem;
     margin-bottom: 1rem;
 }
@@ -92,6 +91,7 @@ body {
     position: absolute;
     top: 0;
     right: 1rem;
+    z-index: 500;
 
     display: flex;
     gap: .5rem;
@@ -104,6 +104,7 @@ body {
     padding: .4rem;
     border-radius: .3rem;
     font-weight: 300;
+    cursor: pointer;
 }
 
 .label {
@@ -154,14 +155,36 @@ body {
 /* #region main */
 
 /* #region app_main */
-#app_main {
-    height: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.content {
+    position: relative;
 }
 
+.content img {
+    width: 100%;
+}
 
+.user_name {
+    background-color: rgba(33, 33, 33, .6);
+    padding: .6rem;
+    position: absolute;
+    bottom: .25rem;
+    left: 0;
+}
+
+.user_name::before {
+    display: inline-block;
+
+    content: "\f131";
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+
+    text-rendering: auto;
+
+    -webkit-font-smooting: antialiased;
+}
 /* #endregion app_main */
 
 /* #region nav */
