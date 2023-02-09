@@ -7,17 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font_Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css"
+        integrity="sha512-+ouAqATs1y4kpPMCHfKHVJwf308zo+tC9dlEYK9rKe7kiP35NiP+Oi35rCFnc16zdvk9aBkDUtEO3tIPl0xN5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Syle -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="debug">
+<body class="">
     <div class="app_container">
         <main id="app_main">
-            <div class="view_bar"></div>
+            <div class="view_bar">
+
+                <span class="bg_secondary color_light text_sm button">
+                    <i class="fas fa-th"></i>
+                    Speaker View
+                </span>
+
+                <span class="bg_secondary color_light text_sm button">
+                    <i class="fa-solid fa-maximize"></i>
+                </span>
+
+            </div>
             <!-- /.view_bar -->
             <div class="container">
                 <div class="card">
@@ -132,11 +143,107 @@
         </main>
         <!-- /#app_main -->
         <nav id="app_nav">
-            <div class="left_buttons"></div>
+            <div class="left_buttons">
+                <div class="button color_light">
+                    <div class="text_med label">
+                        <i class="text_big fa-solid fa-microphone"></i>
+                        Mute
+                    </div>
+                    <!-- /.label -->
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <!-- /.button -->
+                <div class="button color_light">
+                    <div class="text_med label">
+                        <i class="text_big fa-solid fa-video-camera"></i>
+                        Stop Video
+                    </div>
+                    <!-- /.label -->
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <!-- /.button -->
+            </div>
             <!-- /.left_buttons -->
-            <div class="middle_buttons"></div>
+            <div class="middle_buttons">
+                <div class="button color_light">
+                    <div class="text_med label">
+                        <i class="text_big fa-solid fa-user-plus"></i>
+                        Invite
+                    </div>
+                    <!-- /.label -->
+                    <i class="fa-solid fa-angle-up none"></i>
+                </div>
+                <!-- /.button -->
+                <div class="button color_light">
+                    <div class="text_med label">
+                        <i class="text_big fa-solid fa-user-group"></i>
+                        Manage Participants
+                    </div>
+                    <!-- /.label -->
+                    <i class="fa-solid fa-angle-up none"></i>
+                </div>
+                <!-- /.button -->
+                <div class="button color_light">
+                    <div class="text_med label">
+                        <i class="text_big fa-solid fa-chart-column"></i>
+                        Polling
+                    </div>
+                    <!-- /.label -->
+                    <i class="fa-solid fa-angle-up none"></i>
+                </div>
+                <!-- /.button -->
+                <div class="button color_light">
+                    <div class="text_med label">
+                        <i class="text_big color_success fa-solid fa-share-from-square"></i>
+                        Share Screen
+                    </div>
+                    <!-- /.label -->
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <!-- /.button -->
+                <div class="button color_light">
+                    <div class="text_med label">
+                        <i class="text_big fa-solid fa-message"></i>
+                        Chat
+                    </div>
+                    <!-- /.label -->
+                    <i class="fa-solid fa-angle-up none"></i>
+                </div>
+                <!-- /.button -->
+                <div class="button color_light">
+                    <div class="text_med label">
+                        <i class="text_big fa-solid fa-record-vinyl"></i>
+                        Record
+                    </div>
+                    <!-- /.label -->
+                    <i class="fa-solid fa-angle-up none"></i>
+                </div>
+                <!-- /.button -->
+                <div class="button color_light">
+                    <div class="text_med label">
+                        <i class="text_big fas fa-th-large"></i>
+                        Breakout Rooms
+                    </div>
+                    <!-- /.label -->
+                    <i class="fa-solid fa-angle-up none"></i>
+                </div>
+                <!-- /.button -->
+                <div class="button color_light">
+                    <div class="text_med label">
+                        <i class="text_big fa-solid fa-ellipsis"></i>
+                        More
+                    </div>
+                    <!-- /.label -->
+                    <i class="fa-solid fa-angle-up none"></i>
+                </div>
+                <!-- /.button -->
+            </div>
             <!-- /.middle_buttons -->
-            <div class="right_buttons"></div>
+            <div class="right_buttons">
+                <div class="button color_alert text_med bg_secondary">
+                    End meeting
+                </div>
+            </div>
             <!-- /.right_buttons -->
         </nav>
         <!-- /#app_nav -->

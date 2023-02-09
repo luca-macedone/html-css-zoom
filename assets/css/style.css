@@ -52,10 +52,10 @@ body {
     background-color: brown;
 }
 
-.debug .view_bar {
+/* .debug .view_bar {
     height: 50px;
     background-color: #00cb00;
-}
+} */
 
 .debug .left_buttons,
 .debug .middle_buttons,
@@ -69,6 +69,7 @@ body {
 
 /* #region utility */
 .container {
+    height: 100vh; /*! debug*/
     width: 100%;
     margin: auto;
     display: flex;
@@ -77,6 +78,8 @@ body {
     padding: 4rem 4rem 1rem;
 
     overflow-y: scroll ;
+
+    background-color: var(--z-dark);
 }
 
 .card {
@@ -86,10 +89,65 @@ body {
 }
 
 .view_bar {
-    width: 200px;
     position: absolute;
     top: 0;
     right: 1rem;
+
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+
+    padding: .5rem;
+}
+
+.button {
+    padding: .4rem;
+    border-radius: .3rem;
+    font-weight: 300;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.bg_secondary {
+    background-color: var(--z-secondary);
+}
+
+.color_dark {
+    color: var(--z-dark);
+}
+
+.color_light {
+    color: var(--z-light);
+}
+
+.color_success {
+    color: var(--z-success);
+}
+
+.color_alert {
+    color: var(--z-alert);
+}
+
+.text_sm {
+    font-size: .8rem;
+}
+
+.text_med {
+    font-size: 1.1rem;
+}
+
+.text_big {
+    font-size: 2rem;
+}
+
+.none {
+    display: none;
 }
 /* #endregion utility */
 
@@ -102,6 +160,8 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+
 /* #endregion app_main */
 
 /* #region nav */
@@ -115,6 +175,8 @@ body {
 
     display: flex;
     justify-content: space-between;
+
+    background-color: var(--z-primary);
 }
 
 .left_buttons,
@@ -126,6 +188,37 @@ body {
     flex-grow: 3;
 }
 
+#app_nav .button {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+.middle_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right_buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right_buttons .button {
+    border-radius: 0;
+    padding: 0 1.5rem;
+    font-weight: 500;
+}
 
 /* #endregion nav */
 
