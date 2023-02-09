@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 
+/* #region common */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,3 +20,113 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+/* #endregion common */
+
+/* #region debug */
+.debug .app_container {
+    height: 100vh;
+    
+    background-color: palegreen;
+}
+
+.debug #app_main {
+    background-color: paleturquoise;
+}
+
+.debug #app_nav {
+    background-color: palevioletred;
+}
+
+.debug .container {
+    height: 100%;
+    background-color: palegoldenrod;
+}
+
+.debug .card {
+    height: 180px;
+}
+
+.debug .content {
+    height: 100%;
+    background-color: brown;
+}
+
+.debug .view_bar {
+    height: 50px;
+    background-color: #00cb00;
+}
+
+.debug .left_buttons,
+.debug .middle_buttons,
+.debug .right_buttons {
+    height: 100%;
+    background-color: blue;
+    border: 2px dashed black;
+}
+
+/* #endregion debug */
+
+/* #region utility */
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 4rem 4rem 1rem;
+
+    overflow-y: scroll ;
+}
+
+.card {
+    width: calc(100% / 7);
+    padding: .25rem;
+    margin-bottom: 1rem;
+}
+
+.view_bar {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+/* #endregion utility */
+
+/* #region main */
+
+/* #region app_main */
+#app_main {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* #endregion app_main */
+
+/* #region nav */
+#app_nav {
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_buttons,
+.right_buttons {
+    flex-grow: 1;
+}
+
+.middle_buttons {
+    flex-grow: 3;
+}
+
+
+/* #endregion nav */
+
+/* #endregion main */
