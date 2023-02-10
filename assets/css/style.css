@@ -11,6 +11,7 @@
 :root {
     --z-primary: #222222;
     --z-secondary: #4a4a4a;
+    --z-secondary-transparent: #4a4a4aa3;
     --z-dark: #000000;
     --z-light: #ffffff;
     --z-success: #00cb00;
@@ -117,6 +118,10 @@ body {
 
 .bg_secondary {
     background-color: var(--z-secondary);
+}
+
+.bg_secondary_transparent {
+    background-color: var(--z-secondary-transparent);
 }
 
 .color_dark {
